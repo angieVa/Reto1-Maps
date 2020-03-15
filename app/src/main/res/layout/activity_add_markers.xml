@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".AddMarkers">-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/layout_todo"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#DDD3EC"
+tools:context=".AddMarkers">
+
+    <ImageView
+        android:id="@+id/imageView_icon"
+        android:layout_width="93dp"
+        android:layout_height="128dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="157dp"
+        app:srcCompat="@drawable/marker2" />
+
+    <TextView
+        android:id="@+id/textView_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_titulo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="61dp"
+        android:text="Nombre: "
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_titulo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="31dp"
+        android:ems="10"
+        android:hint="Marcador"
+        android:inputType="textPersonName"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_nombre"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="66dp"
+        android:text="Dirección: "
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView_adress"
+        android:layout_width="194dp"
+        android:layout_height="68dp"
+        android:layout_below="@+id/textView_nombre"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="33dp"
+        android:text="D"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/Btn_agregar"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_direccion"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="102dp"
+        android:background="#9C6DAF"
+        android:text="Agregar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="253dp"
+        android:layout_marginEnd="81dp"
+        android:text="Agregar Marcador"
+        android:textSize="30sp" />
+
+</RelativeLayout>
